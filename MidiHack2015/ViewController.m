@@ -34,10 +34,7 @@ static NSMutableArray *buttons;
     [buttons addObject:self.button3];
     [buttons addObject:self.button4];
     
-    [self.button1 setTitle:@"X" forState:UIControlStateNormal];
-    [self.button2 setTitle:@"X" forState:UIControlStateNormal];
-    [self.button3 setTitle:@"X" forState:UIControlStateNormal];
-    [self.button4 setTitle:@"X" forState:UIControlStateNormal];
+//    [self.button1 setTitle:@"X" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {

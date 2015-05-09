@@ -72,7 +72,6 @@
                         <outlet property="button2" destination="FgQ-ef-nEf" id="91t-b2-bgS"/>
                         <outlet property="button3" destination="LNy-fq-99e" id="eeD-b0-bDW"/>
                         <outlet property="button4" destination="ewG-Kx-vYN" id="dQh-zK-eCI"/>
-                        <outlet property="mainButton" destination="eEQ-iw-fK2" id="Cza-N7-Wtd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
