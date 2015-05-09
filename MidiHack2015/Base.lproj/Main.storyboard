@@ -16,25 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Something..." minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="0p5-le-bnN">
-                                <rect key="frame" x="16" y="259" width="568" height="82"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLf-Vc-7gh">
-                                <rect key="frame" x="152" y="349" width="296" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="Submit"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="0p5-le-bnN" secondAttribute="centerY" id="2TD-UN-nJ8"/>
-                            <constraint firstItem="qLf-Vc-7gh" firstAttribute="top" secondItem="0p5-le-bnN" secondAttribute="bottom" constant="8" id="8Oa-1D-caO"/>
-                            <constraint firstAttribute="centerX" secondItem="qLf-Vc-7gh" secondAttribute="centerX" constant="-0.5" id="8qW-jm-deD"/>
-                            <constraint firstAttribute="width" secondItem="qLf-Vc-7gh" secondAttribute="width" id="BOq-TV-rXC"/>
-                            <constraint firstAttribute="centerX" secondItem="0p5-le-bnN" secondAttribute="centerX" constant="-0.5" id="Fg6-Kg-Ah8"/>
-                            <constraint firstItem="0p5-le-bnN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ho9-ga-dyp"/>
+                            <constraint firstAttribute="centerX" secondItem="eEQ-iw-fK2" secondAttribute="centerX" id="5LJ-Qh-8tP"/>
+                            <constraint firstAttribute="centerY" secondItem="eEQ-iw-fK2" secondAttribute="centerY" id="TDI-3r-NCc"/>
                         </constraints>
                     </view>
                 </viewController>
