@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04402851AFE412400E6F918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04402841AFE412400E6F918 /* Main.storyboard */; };
+		B04402871AFE460900E6F918 /* synth.caf in Resources */ = {isa = PBXBuildFile; fileRef = B04402861AFE460900E6F918 /* synth.caf */; };
+		B04402891AFE461500E6F918 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = B04402881AFE461500E6F918 /* Sounds */; };
+		B044028C1AFE4ABD00E6F918 /* AudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B044028B1AFE4ABD00E6F918 /* AudioEngine.m */; };
 		B080289D1AF8FBCB0066041C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B080289C1AF8FBCB0066041C /* main.m */; };
 		B08028A01AF8FBCB0066041C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B080289F1AF8FBCB0066041C /* AppDelegate.m */; };
 		B08028A31AF8FBCB0066041C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08028A21AF8FBCB0066041C /* ViewController.m */; };
-		B08028A61AF8FBCB0066041C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08028A41AF8FBCB0066041C /* Main.storyboard */; };
 		B08028A81AF8FBCB0066041C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08028A71AF8FBCB0066041C /* Images.xcassets */; };
 		B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08028A91AF8FBCB0066041C /* LaunchScreen.xib */; };
 		B08028B71AF8FBCB0066041C /* MidiHack2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B08028B61AF8FBCB0066041C /* MidiHack2015Tests.m */; };
@@ -29,6 +32,11 @@
 
 /* Begin PBXFileReference section */
 		4EEFF00BB5555E7403A149CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B04402841AFE412400E6F918 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B04402861AFE460900E6F918 /* synth.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = synth.caf; path = Sounds/synth.caf; sourceTree = "<group>"; };
+		B04402881AFE461500E6F918 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		B044028A1AFE4ABD00E6F918 /* AudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
+		B044028B1AFE4ABD00E6F918 /* AudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEngine.m; sourceTree = "<group>"; };
 		B08028971AF8FBCB0066041C /* MidiHack2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiHack2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B080289B1AF8FBCB0066041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B080289C1AF8FBCB0066041C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +44,6 @@
 		B080289F1AF8FBCB0066041C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B08028A11AF8FBCB0066041C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B08028A21AF8FBCB0066041C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B08028A51AF8FBCB0066041C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B08028A71AF8FBCB0066041C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B08028AA1AF8FBCB0066041C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B08028B01AF8FBCB0066041C /* MidiHack2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidiHack2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,10 +115,14 @@
 				B080289E1AF8FBCB0066041C /* AppDelegate.h */,
 				B080289F1AF8FBCB0066041C /* AppDelegate.m */,
 				B08028A11AF8FBCB0066041C /* ViewController.h */,
+				B044028A1AFE4ABD00E6F918 /* AudioEngine.h */,
+				B044028B1AFE4ABD00E6F918 /* AudioEngine.m */,
 				B08028A21AF8FBCB0066041C /* ViewController.m */,
-				B08028A41AF8FBCB0066041C /* Main.storyboard */,
+				B04402861AFE460900E6F918 /* synth.caf */,
 				B08028A71AF8FBCB0066041C /* Images.xcassets */,
+				B04402841AFE412400E6F918 /* Main.storyboard */,
 				B08028A91AF8FBCB0066041C /* LaunchScreen.xib */,
+				B04402881AFE461500E6F918 /* Sounds */,
 				B080289A1AF8FBCB0066041C /* Supporting Files */,
 			);
 			path = MidiHack2015;
@@ -226,9 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08028A61AF8FBCB0066041C /* Main.storyboard in Resources */,
+				B04402891AFE461500E6F918 /* Sounds in Resources */,
+				B04402851AFE412400E6F918 /* Main.storyboard in Resources */,
 				B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */,
 				B08028A81AF8FBCB0066041C /* Images.xcassets in Resources */,
+				B04402871AFE460900E6F918 /* synth.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B044028C1AFE4ABD00E6F918 /* AudioEngine.m in Sources */,
 				B08028A31AF8FBCB0066041C /* ViewController.m in Sources */,
 				B08028A01AF8FBCB0066041C /* AppDelegate.m in Sources */,
 				B080289D1AF8FBCB0066041C /* main.m in Sources */,
@@ -304,14 +318,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B08028A41AF8FBCB0066041C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B08028A51AF8FBCB0066041C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B08028A91AF8FBCB0066041C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

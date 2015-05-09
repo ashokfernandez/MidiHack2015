@@ -6,20 +6,35 @@
 //  Copyright (c) 2015 Ashok Fernandez. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "AudioEngine.h"
 
 @interface ViewController ()
+
+@property AudioEngine *audioEngine;
 
 @end
 
 @implementation ViewController
 
+
+-(IBAction)showMessage:(id)sender {
+//    NSLog(@"Hello");
+//
+//    NSURL *file = [[NSBundle mainBundle] URLForResource:@"synth" withExtension:@"caf"];
+//    self.loop = [AEAudioFilePlayer audioFilePlayerWithURL:file
+//                                          audioController: audioController
+//                                                    error:NULL];
+    [self.audioEngine start];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view, typically from a nib.
-    
+    self.audioEngine = [[AudioEngine alloc] init];
+    [self.audioEngine setup];
 }
 
 - (void)didReceiveMemoryWarning {

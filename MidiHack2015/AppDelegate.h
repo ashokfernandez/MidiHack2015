@@ -13,7 +13,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, readonly) AEAudioController *audioController;
+@property (nonatomic, strong) AEAudioController *audioController;
 
 @end
 
