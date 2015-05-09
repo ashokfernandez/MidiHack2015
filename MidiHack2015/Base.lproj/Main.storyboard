@@ -20,7 +20,7 @@
                                 <rect key="frame" x="200" y="233" width="50" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="2">
+                                <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="200" y="163" width="50" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="0">
+                                <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="249" y="164" width="50" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="1">
+                                <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -56,7 +56,7 @@
                                 <rect key="frame" x="249" y="233" width="50" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="3">
+                                <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
