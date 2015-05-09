@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
-                                <rect key="frame" x="78" y="266" width="30" height="68"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
+                                <rect key="frame" x="241" y="199" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="1">
@@ -28,8 +28,8 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCB-qd-eX5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
-                                <rect key="frame" x="169" y="254" width="35" height="89"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
+                                <rect key="frame" x="324" y="199" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="2">
@@ -40,8 +40,8 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUJ-r8-Vv0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
-                                <rect key="frame" x="254" y="253" width="35" height="89"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
+                                <rect key="frame" x="241" y="310" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="3">
@@ -52,8 +52,8 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQg-IB-FeH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
-                                <rect key="frame" x="331" y="256" width="35" height="89"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
+                                <rect key="frame" x="324" y="311" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="4">
@@ -66,16 +66,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="FgQ-ef-nEf" secondAttribute="centerY" id="4yP-yd-45g"/>
-                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="centerY" secondItem="eEQ-iw-fK2" secondAttribute="centerY" id="Bh3-8Z-tuj"/>
-                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="leading" secondItem="LNy-fq-99e" secondAttribute="trailing" constant="42" id="O6H-JQ-MZm"/>
-                            <constraint firstAttribute="centerY" secondItem="ewG-Kx-vYN" secondAttribute="centerY" id="T2K-Xd-6si"/>
-                            <constraint firstAttribute="centerY" secondItem="eEQ-iw-fK2" secondAttribute="centerY" id="VRG-9p-cmJ"/>
-                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="centerY" secondItem="FgQ-ef-nEf" secondAttribute="centerY" id="a5P-cq-0zh"/>
-                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="centerY" secondItem="LNy-fq-99e" secondAttribute="centerY" id="igd-oC-Pv9"/>
-                            <constraint firstAttribute="centerY" secondItem="LNy-fq-99e" secondAttribute="centerY" id="ijU-5d-6FJ"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="button1" destination="eEQ-iw-fK2" id="et1-c0-an9"/>
