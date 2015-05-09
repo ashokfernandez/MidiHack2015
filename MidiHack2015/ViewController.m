@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.mainButton setTitle:@"Button" forState:UIControlStateNormal];
+    [self.button1 setTitle:@"1" forState:UIControlStateNormal];
+    [self.button2 setTitle:@"2" forState:UIControlStateNormal];
+    [self.button3 setTitle:@"3" forState:UIControlStateNormal];
+    [self.button4 setTitle:@"4" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,7 +30,8 @@
 }
 
 - (IBAction)handleButtonClick:(id)sender {
-    NSLog(@"Button");
+    NSLog(@"%@", [sender currentTitle]);
+    [sender setTitle:@"X" forState:UIControlStateNormal];
 }
 
 @end

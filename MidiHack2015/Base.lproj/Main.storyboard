@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
-                                <rect key="frame" x="285" y="270" width="30" height="68"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
+                                <rect key="frame" x="78" y="266" width="30" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="1">
@@ -28,14 +28,60 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCB-qd-eX5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
+                                <rect key="frame" x="169" y="254" width="35" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUJ-r8-Vv0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
+                                <rect key="frame" x="254" y="253" width="35" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQg-IB-FeH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
+                                <rect key="frame" x="331" y="256" width="35" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVD-q9-bIR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="eEQ-iw-fK2" secondAttribute="centerX" id="5LJ-Qh-8tP"/>
-                            <constraint firstAttribute="centerY" secondItem="eEQ-iw-fK2" secondAttribute="centerY" id="TDI-3r-NCc"/>
+                            <constraint firstAttribute="centerY" secondItem="FgQ-ef-nEf" secondAttribute="centerY" id="4yP-yd-45g"/>
+                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="centerY" secondItem="eEQ-iw-fK2" secondAttribute="centerY" id="Bh3-8Z-tuj"/>
+                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="leading" secondItem="LNy-fq-99e" secondAttribute="trailing" constant="42" id="O6H-JQ-MZm"/>
+                            <constraint firstAttribute="centerY" secondItem="ewG-Kx-vYN" secondAttribute="centerY" id="T2K-Xd-6si"/>
+                            <constraint firstAttribute="centerY" secondItem="eEQ-iw-fK2" secondAttribute="centerY" id="VRG-9p-cmJ"/>
+                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="centerY" secondItem="FgQ-ef-nEf" secondAttribute="centerY" id="a5P-cq-0zh"/>
+                            <constraint firstItem="ewG-Kx-vYN" firstAttribute="centerY" secondItem="LNy-fq-99e" secondAttribute="centerY" id="igd-oC-Pv9"/>
+                            <constraint firstAttribute="centerY" secondItem="LNy-fq-99e" secondAttribute="centerY" id="ijU-5d-6FJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button1" destination="eEQ-iw-fK2" id="et1-c0-an9"/>
+                        <outlet property="button2" destination="FgQ-ef-nEf" id="91t-b2-bgS"/>
+                        <outlet property="button3" destination="LNy-fq-99e" id="eeD-b0-bDW"/>
+                        <outlet property="button4" destination="ewG-Kx-vYN" id="dQh-zK-eCI"/>
                         <outlet property="mainButton" destination="eEQ-iw-fK2" id="Cza-N7-Wtd"/>
                     </connections>
                 </viewController>
@@ -58,23 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nq4-7V-H31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zJv-rw-9xg">
-            <objects>
-                <viewController id="TMj-0O-sFT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vg2-us-Qqs"/>
-                        <viewControllerLayoutGuide type="bottom" id="mW6-lK-sWn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KWW-DG-GRk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hN0-FY-xln" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="1519" y="245"/>
         </scene>
     </scenes>
 </document>

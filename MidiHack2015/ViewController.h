@@ -10,7 +10,13 @@
 
 @interface ViewController : UIViewController
 
+// TODO: Delete this reference when you figure out how
 @property (weak, nonatomic) IBOutlet UIButton *mainButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIButton *button3;
+@property (weak, nonatomic) IBOutlet UIButton *button4;
 
 @end
 
