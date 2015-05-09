@@ -11,6 +11,7 @@
 		B04402871AFE460900E6F918 /* synth.caf in Resources */ = {isa = PBXBuildFile; fileRef = B04402861AFE460900E6F918 /* synth.caf */; };
 		B04402891AFE461500E6F918 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = B04402881AFE461500E6F918 /* Sounds */; };
 		B044028C1AFE4ABD00E6F918 /* AudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B044028B1AFE4ABD00E6F918 /* AudioEngine.m */; };
+		B04402951AFE8FBF00E6F918 /* AudioSamplePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */; };
 		B080289D1AF8FBCB0066041C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B080289C1AF8FBCB0066041C /* main.m */; };
 		B08028A01AF8FBCB0066041C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B080289F1AF8FBCB0066041C /* AppDelegate.m */; };
 		B08028A31AF8FBCB0066041C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08028A21AF8FBCB0066041C /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		B04402881AFE461500E6F918 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		B044028A1AFE4ABD00E6F918 /* AudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
 		B044028B1AFE4ABD00E6F918 /* AudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEngine.m; sourceTree = "<group>"; };
+		B04402931AFE8FBF00E6F918 /* AudioSamplePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSamplePlayer.h; sourceTree = "<group>"; };
+		B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSamplePlayer.m; sourceTree = "<group>"; };
 		B08028971AF8FBCB0066041C /* MidiHack2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiHack2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B080289B1AF8FBCB0066041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B080289C1AF8FBCB0066041C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				B08028A11AF8FBCB0066041C /* ViewController.h */,
 				B044028A1AFE4ABD00E6F918 /* AudioEngine.h */,
 				B044028B1AFE4ABD00E6F918 /* AudioEngine.m */,
+				B04402931AFE8FBF00E6F918 /* AudioSamplePlayer.h */,
+				B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */,
 				B08028A21AF8FBCB0066041C /* ViewController.m */,
 				B04402861AFE460900E6F918 /* synth.caf */,
 				B08028A71AF8FBCB0066041C /* Images.xcassets */,
@@ -294,6 +299,7 @@
 			files = (
 				B044028C1AFE4ABD00E6F918 /* AudioEngine.m in Sources */,
 				B08028A31AF8FBCB0066041C /* ViewController.m in Sources */,
+				B04402951AFE8FBF00E6F918 /* AudioSamplePlayer.m in Sources */,
 				B08028A01AF8FBCB0066041C /* AppDelegate.m in Sources */,
 				B080289D1AF8FBCB0066041C /* main.m in Sources */,
 			);

@@ -7,10 +7,12 @@
 //
 
 #import "AudioEngine.h"
+#import "AudioSamplePlayer.h"
 #import <TheAmazingAudioEngine/TheAmazingAudioEngine.h>
 
 @interface AudioEngine ()
 @property (nonatomic) AEAudioController *audioController;
+@property     AudioSamplePlayer *track1;
 //@property (nonatomic) NSArray *channels;
 //@property (nonatomic) AEAudioUnitFilter *pulseReverb;
 //@property (nonatomic) AEAudioUnitFilter *boopReverb;
@@ -23,35 +25,28 @@
     self.audioController = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]];
     
     // Initialise tracks
-//    NSError *errorTrack1 = nil;
-    AEAudioFilePlayer *track1 =
-    [AEAudioFilePlayer audioFilePlayerWithURL:
+    NSError *errorTrack1 = nil;
+    self.track1 =
+    [AudioSamplePlayer audioFilePlayerWithURL:
      [[NSBundle mainBundle] URLForResource:@"synth" withExtension:@"caf"]
                               audioController: self.audioController
-                                        error:NULL];
-//
+                                        error:&errorTrack1];
+
 //    NSError *errorTrack2 = nil;
-//    AEAudioFilePlayer *track2 =
 //    [AEAudioFilePlayer audioFilePlayerWithURL:
 //     [[NSBundle mainBundle] URLForResource:@"Track 2" withExtension:@"m4a"]
 //                              audioController: self.audioController
 //                                        error:&errorTrack2];
-//    
-//    NSLog(@"%@", errorTrack1);
-//    NSLog(@"%@", errorTrack2);
+    
+//    NSLog(@"%@", error);
     
     // Set to loop mode
-//    track1.loop = YES;
+//    self.track1.loop = YES;
 //    track2.loop = YES;
     
     // Add channels
-    [self.audioController addChannels:[NSArray arrayWithObjects:track1, nil]];
+    [self.audioController addChannels:[NSArray arrayWithObjects:self.track1, nil]];
 
-    return YES;
-}
-
-- (BOOL)start
-{
     NSError *error = nil;
     if ( ! [self.audioController start:&error])
     {
@@ -59,6 +54,13 @@
         return NO;
     }
     
+    return YES;
+
+}
+
+- (BOOL)start
+{
+    [self.track1 replay];
     return YES;
 }
 
