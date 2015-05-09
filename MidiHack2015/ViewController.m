@@ -18,13 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view, typically from a nib.
-    
+    [self.mainButton setTitle:@"Button" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)handleButtonClick:(id)sender {
+    NSLog(@"Button");
 }
 
 @end
