@@ -45,7 +45,7 @@ static NSMutableArray *buttons;
 - (IBAction)handleButtonClick:(id)sender {
     int buttonIndex = (int)((UIButton *)sender).tag;
     NSNumber *buttonState = states[buttonIndex];
-    NSLog(@"Index: %d State: %@", buttonIndex, buttonState);
+    NSLog(@"change: index: %d state: %@", buttonIndex, buttonState);
     
     if ([buttonState isEqualToNumber: @1]) {
         [buttons[buttonIndex] setTitle:@"X" forState:UIControlStateNormal];
@@ -54,6 +54,8 @@ static NSMutableArray *buttons;
         [buttons[buttonIndex] setTitle:@"O" forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }
+    
+    NSLog(@"state: %@", states);
 }
 
 @end
