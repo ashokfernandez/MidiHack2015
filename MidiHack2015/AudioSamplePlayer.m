@@ -48,6 +48,7 @@ NSLog(@"Error: %ld -> %s:%d", (status), __FILE__, __LINE__);\
     
     player->_audio = operation.bufferList;
     player->_lengthInFrames = operation.lengthInFrames;
+    player->_playhead = operation.lengthInFrames;
     
     
     return player;
@@ -76,7 +77,7 @@ NSLog(@"Error: %ld -> %s:%d", (status), __FILE__, __LINE__);\
     _playhead = (int32_t)((currentTime / [self duration]) * _lengthInFrames) % _lengthInFrames;
 }
 
--(void)replay{
+-(void)play{
     _playhead = (int32_t)((0) * _lengthInFrames) % _lengthInFrames;
     _channelIsPlaying = YES;
 }
@@ -89,15 +90,8 @@ static void notifyLoopRestart(AEAudioController *audioController, void *userInfo
 
 static void notifyPlaybackStopped(AEAudioController *audioController, void *userInfo, int length) {
     AudioSamplePlayer *THIS = (__bridge AudioSamplePlayer*)*(void**)userInfo;
-//    THIS.channelIsPlaying = NO;
-    
-//    if ( THIS->_removeUponFinish ) {
-//        [audioController removeChannels:@[THIS]];
-//    }
     
     if ( THIS.completionBlock ) THIS.completionBlock();
-    
-//    THIS->_playhead = 0;
 }
 
 

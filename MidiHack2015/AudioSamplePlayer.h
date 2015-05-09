@@ -46,7 +46,7 @@ extern "C" {
 @property (nonatomic, copy) void(^completionBlock)();       //!< A block to be called when playback finishes
 @property (nonatomic, copy) void(^startLoopBlock)();        //!< A block to be called when the loop restarts in loop mode
 
--(void)replay; // Starts the clip again
+-(void)play; // Plays the sample
 @end
     
 #ifdef __cplusplus

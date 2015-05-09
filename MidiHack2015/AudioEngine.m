@@ -60,7 +60,7 @@
 
 - (BOOL)start
 {
-    [self.track1 replay];
+    [self.track1 play];
     return YES;
 }
 
