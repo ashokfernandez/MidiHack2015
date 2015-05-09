@@ -28,7 +28,7 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCB-qd-eX5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
                                 <rect key="frame" x="324" y="199" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -40,7 +40,7 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUJ-r8-Vv0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
                                 <rect key="frame" x="241" y="310" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -52,7 +52,7 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQg-IB-FeH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
                                 <rect key="frame" x="324" y="311" width="35" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
