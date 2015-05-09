@@ -48,7 +48,7 @@ static NSMutableArray *buttons;
 - (IBAction)handleButtonClick:(id)sender {
     int buttonIndex = (int)((UIButton *)sender).tag;
     NSNumber *buttonState = states[buttonIndex];
-    NSLog(@"%d %@", buttonIndex, buttonState);
+    NSLog(@"Index: %d State: %@", buttonIndex, buttonState);
     
     if ([buttonState isEqualToNumber: @1]) {
         [buttons[buttonIndex] setTitle:@"X" forState:UIControlStateNormal];
