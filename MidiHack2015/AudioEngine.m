@@ -24,43 +24,45 @@
 
 @implementation AudioEngine
 
--(BOOL)setup {
++(id)create {
+    
+    AudioEngine *engine = [[self alloc] init];
 
-    self.audioController = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]];
+    engine->_audioController = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]];
     
     // Initialise tracks
     AudioSamplePlayer *track1 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Kick" withExtension:@"caf"]
-                                            audioController: self.audioController
+                                            audioController: engine->_audioController
                                                       error:NULL];
 
     AudioSamplePlayer *track2 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Snare" withExtension:@"caf"]
-                                                          audioController: self.audioController
+                                                          audioController: engine->_audioController
                                                                     error:NULL];
 
     AudioSamplePlayer *track3 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Hat" withExtension:@"caf"]
-                                                          audioController: self.audioController
+                                                          audioController: engine->_audioController
                                                                     error:NULL];
 
     
     // Save channels to object
-    self.channels = [NSArray arrayWithObjects:track1, track2, track3, nil];
+    engine->_channels = [NSArray arrayWithObjects:track1, track2, track3, nil];
     
     // Add channels to main audio controller
-    [self.audioController addChannels: self.channels];
+    [engine->_audioController addChannels: engine->_channels];
 
     // Start playback
     NSError *error = nil;
-    if ( ! [self.audioController start:&error])
+    if ( ! [engine->_audioController start:&error])
     {
         NSLog(@"%@", error);
-        return NO;
+        return nil;
     }
     
     // Initialise the step value and timer
-    self.step = 0;
+    engine->_step = 0;
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.3
-                                     target:self
+    engine->_timer = [NSTimer scheduledTimerWithTimeInterval:0.3
+                                     target:engine
                                    selector:@selector(incrementStep)
                                    userInfo:nil
                                     repeats:YES];
@@ -70,9 +72,9 @@
     NSArray *snarePattern = [NSArray arrayWithObjects: @0, @0, @1, @0, nil];
     NSArray *hatPattern = [NSArray arrayWithObjects: @0, @1, @1, @1, nil];
     
-    self.pattern = [NSArray arrayWithObjects: kickPattern, snarePattern, hatPattern, nil];
+    engine->_pattern = [NSArray arrayWithObjects: kickPattern, snarePattern, hatPattern, nil];
     
-    return YES;
+    return engine;
 
 }
 

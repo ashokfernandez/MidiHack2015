@@ -26,15 +26,15 @@
 //    self.loop = [AEAudioFilePlayer audioFilePlayerWithURL:file
 //                                          audioController: audioController
 //                                                    error:NULL];
-    [self.audioEngine start];
+        self.audioEngine = [AudioEngine create];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view, typically from a nib.
-    self.audioEngine = [[AudioEngine alloc] init];
-    [self.audioEngine setup];
+//    self.audioEngine = [[AudioEngine alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning {

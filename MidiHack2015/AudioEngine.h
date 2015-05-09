@@ -10,7 +10,6 @@
 
 @interface AudioEngine : NSObject
 
--(BOOL)setup;
--(BOOL)start;
++(id)create;
 
 @end
