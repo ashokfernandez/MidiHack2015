@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B04402851AFE412400E6F918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04402841AFE412400E6F918 /* Main.storyboard */; };
-		B04402871AFE460900E6F918 /* synth.caf in Resources */ = {isa = PBXBuildFile; fileRef = B04402861AFE460900E6F918 /* synth.caf */; };
-		B04402891AFE461500E6F918 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = B04402881AFE461500E6F918 /* Sounds */; };
 		B044028C1AFE4ABD00E6F918 /* AudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B044028B1AFE4ABD00E6F918 /* AudioEngine.m */; };
 		B04402951AFE8FBF00E6F918 /* AudioSamplePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */; };
+		B044029C1AFEC4FD00E6F918 /* Hat.caf in Resources */ = {isa = PBXBuildFile; fileRef = B04402991AFEC4DC00E6F918 /* Hat.caf */; };
+		B044029D1AFEC4FD00E6F918 /* Kick.caf in Resources */ = {isa = PBXBuildFile; fileRef = B044029A1AFEC4DC00E6F918 /* Kick.caf */; };
+		B044029E1AFEC4FD00E6F918 /* Snare.caf in Resources */ = {isa = PBXBuildFile; fileRef = B044029B1AFEC4DC00E6F918 /* Snare.caf */; };
 		B080289D1AF8FBCB0066041C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B080289C1AF8FBCB0066041C /* main.m */; };
 		B08028A01AF8FBCB0066041C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B080289F1AF8FBCB0066041C /* AppDelegate.m */; };
 		B08028A31AF8FBCB0066041C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08028A21AF8FBCB0066041C /* ViewController.m */; };
@@ -34,12 +35,13 @@
 /* Begin PBXFileReference section */
 		4EEFF00BB5555E7403A149CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B04402841AFE412400E6F918 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B04402861AFE460900E6F918 /* synth.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = synth.caf; path = Sounds/synth.caf; sourceTree = "<group>"; };
-		B04402881AFE461500E6F918 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		B044028A1AFE4ABD00E6F918 /* AudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
 		B044028B1AFE4ABD00E6F918 /* AudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEngine.m; sourceTree = "<group>"; };
 		B04402931AFE8FBF00E6F918 /* AudioSamplePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSamplePlayer.h; sourceTree = "<group>"; };
 		B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSamplePlayer.m; sourceTree = "<group>"; };
+		B04402991AFEC4DC00E6F918 /* Hat.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hat.caf; sourceTree = "<group>"; };
+		B044029A1AFEC4DC00E6F918 /* Kick.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kick.caf; sourceTree = "<group>"; };
+		B044029B1AFEC4DC00E6F918 /* Snare.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snare.caf; sourceTree = "<group>"; };
 		B08028971AF8FBCB0066041C /* MidiHack2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiHack2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B080289B1AF8FBCB0066041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B080289C1AF8FBCB0066041C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,11 +125,12 @@
 				B04402931AFE8FBF00E6F918 /* AudioSamplePlayer.h */,
 				B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */,
 				B08028A21AF8FBCB0066041C /* ViewController.m */,
-				B04402861AFE460900E6F918 /* synth.caf */,
+				B04402991AFEC4DC00E6F918 /* Hat.caf */,
+				B044029A1AFEC4DC00E6F918 /* Kick.caf */,
+				B044029B1AFEC4DC00E6F918 /* Snare.caf */,
 				B08028A71AF8FBCB0066041C /* Images.xcassets */,
 				B04402841AFE412400E6F918 /* Main.storyboard */,
 				B08028A91AF8FBCB0066041C /* LaunchScreen.xib */,
-				B04402881AFE461500E6F918 /* Sounds */,
 				B080289A1AF8FBCB0066041C /* Supporting Files */,
 			);
 			path = MidiHack2015;
@@ -242,11 +245,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04402891AFE461500E6F918 /* Sounds in Resources */,
+				B044029C1AFEC4FD00E6F918 /* Hat.caf in Resources */,
+				B044029D1AFEC4FD00E6F918 /* Kick.caf in Resources */,
+				B044029E1AFEC4FD00E6F918 /* Snare.caf in Resources */,
 				B04402851AFE412400E6F918 /* Main.storyboard in Resources */,
 				B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */,
 				B08028A81AF8FBCB0066041C /* Images.xcassets in Resources */,
-				B04402871AFE460900E6F918 /* synth.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
