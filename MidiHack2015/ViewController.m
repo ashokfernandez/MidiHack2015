@@ -16,16 +16,23 @@
 @implementation ViewController
 
 static NSMutableArray *states;
+static NSMutableArray *buttons;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     states = [[NSMutableArray alloc] init];
+    buttons = [[NSMutableArray alloc] init];
     
-    [states addObject:@1];
-    [states addObject:@1];
-    [states addObject:@1];
-    [states addObject:@1];
+    [states addObject:@0];
+    [states addObject:@0];
+    [states addObject:@0];
+    [states addObject:@0];
+    
+    [buttons addObject:self.button1];
+    [buttons addObject:self.button2];
+    [buttons addObject:self.button3];
+    [buttons addObject:self.button4];
     
     [self.button1 setTitle:@"X" forState:UIControlStateNormal];
     [self.button2 setTitle:@"X" forState:UIControlStateNormal];
@@ -39,22 +46,15 @@ static NSMutableArray *states;
 }
 
 - (IBAction)handleButtonClick:(id)sender {
-//    NSLog(@"%@", [sender currentTitle]);
-//    [sender setTitle:@"X" forState:UIControlStateNormal];
     int buttonIndex = (int)((UIButton *)sender).tag;
-//    NSLog(@"%d", buttonIndex);
-    
-//    bool buttonState = [states objectAtIndex:buttonIndex];
     NSNumber *buttonState = states[buttonIndex];
-//    NSLog(@"%d %d", buttonIndex, buttonState);
+    NSLog(@"%d %@", buttonIndex, buttonState);
     
     if ([buttonState isEqualToNumber: @1]) {
-        NSLog(@"YES");
-        [self.button1 setTitle:@"X" forState:UIControlStateNormal];
+        [buttons[buttonIndex] setTitle:@"X" forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@0];
     } else {
-        NSLog(@"NO");
-        [self.button1 setTitle:@"O" forState:UIControlStateNormal];
+        [buttons[buttonIndex] setTitle:@"O" forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }
 }
