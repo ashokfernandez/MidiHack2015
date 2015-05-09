@@ -1,1 +1,1 @@
-# MidiHack2015
+# Midi-Hack-2015
