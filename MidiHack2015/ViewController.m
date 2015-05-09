@@ -34,7 +34,17 @@ static NSMutableArray *buttons;
     [buttons addObject:self.button3];
     [buttons addObject:self.button4];
     
-//    [self.button1 setTitle:@"X" forState:UIControlStateNormal];
+    UIImage *buttonImage = [UIImage imageNamed:@"play.png"];
+    [buttons[0] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [buttons[1] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [buttons[2] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [buttons[3] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    
+    // Remove text values that were set on buttons since they're only set for debugging purposes
+    [self.button1 setTitle:@"" forState:UIControlStateNormal];
+    [self.button2 setTitle:@"" forState:UIControlStateNormal];
+    [self.button3 setTitle:@"" forState:UIControlStateNormal];
+    [self.button4 setTitle:@"" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,12 +58,16 @@ static NSMutableArray *buttons;
     NSLog(@"change: index: %d state: %@", buttonIndex, buttonState);
     
     if ([buttonState isEqualToNumber: @1]) {
-        [buttons[buttonIndex] setTitle:@"X" forState:UIControlStateNormal];
+        UIImage *buttonImage = [UIImage imageNamed:@"play.png"];
+        [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@0];
     } else {
-        [buttons[buttonIndex] setTitle:@"O" forState:UIControlStateNormal];
+        UIImage *buttonImage = [UIImage imageNamed:@"ellipses.png"];
+        [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }
+    
+    
     
     NSLog(@"state: %@", states);
 }

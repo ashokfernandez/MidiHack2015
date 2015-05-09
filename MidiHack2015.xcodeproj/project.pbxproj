@@ -15,6 +15,8 @@
 		B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08028A91AF8FBCB0066041C /* LaunchScreen.xib */; };
 		B08028B71AF8FBCB0066041C /* MidiHack2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B08028B61AF8FBCB0066041C /* MidiHack2015Tests.m */; };
 		B878245BF8CE6B553EBC55C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C3D4ABFB4416BFD0FCBD8 /* libPods.a */; };
+		BAB698351AFEC24D0082E207 /* ellipses.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB698331AFEC24D0082E207 /* ellipses.png */; };
+		BAB698361AFEC24D0082E207 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB698341AFEC24D0082E207 /* play.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		B08028B51AF8FBCB0066041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08028B61AF8FBCB0066041C /* MidiHack2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiHack2015Tests.m; sourceTree = "<group>"; };
 		B73C3D4ABFB4416BFD0FCBD8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB698331AFEC24D0082E207 /* ellipses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ellipses.png; sourceTree = "<group>"; };
+		BAB698341AFEC24D0082E207 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		E5A388B8840EF4E7CDD983B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,8 @@
 		B08028991AF8FBCB0066041C /* MidiHack2015 */ = {
 			isa = PBXGroup;
 			children = (
+				BAB698331AFEC24D0082E207 /* ellipses.png */,
+				BAB698341AFEC24D0082E207 /* play.png */,
 				B080289E1AF8FBCB0066041C /* AppDelegate.h */,
 				B080289F1AF8FBCB0066041C /* AppDelegate.m */,
 				B08028A11AF8FBCB0066041C /* ViewController.h */,
@@ -226,9 +232,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB698351AFEC24D0082E207 /* ellipses.png in Resources */,
 				B08028A61AF8FBCB0066041C /* Main.storyboard in Resources */,
 				B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */,
 				B08028A81AF8FBCB0066041C /* Images.xcassets in Resources */,
+				BAB698361AFEC24D0082E207 /* play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

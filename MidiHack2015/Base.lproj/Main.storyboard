@@ -16,11 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
-                                <rect key="frame" x="200" y="233" width="50" height="89"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
+                                <rect key="frame" x="159" y="191" width="64" height="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,11 +27,10 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQg-IB-FeH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
-                                <rect key="frame" x="200" y="163" width="50" height="89"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
+                                <rect key="frame" x="159" y="119" width="64" height="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -40,11 +38,10 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCB-qd-eX5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
-                                <rect key="frame" x="249" y="164" width="50" height="89"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
+                                <rect key="frame" x="231" y="120" width="64" height="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,11 +49,10 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUJ-r8-Vv0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
-                                <rect key="frame" x="249" y="233" width="50" height="89"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
+                                <rect key="frame" x="231" y="191" width="64" height="64"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
