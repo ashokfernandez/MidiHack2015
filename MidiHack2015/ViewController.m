@@ -26,14 +26,17 @@
 //    self.loop = [AEAudioFilePlayer audioFilePlayerWithURL:file
 //                                          audioController: audioController
 //                                                    error:NULL];
-        self.audioEngine = [AudioEngine create];
+    NSArray *track1Pattern = [NSArray arrayWithObjects: @1, @1, @1, @1, @1, @1, @1, @1, nil];
+    NSArray *track2Pattern = [NSArray arrayWithObjects: @1, @0, @0, @0, @0, @1, @1, @0, nil];
+    NSArray *track3Pattern = [NSArray arrayWithObjects: @0, @0, @1, @1, @0, @0, @0, @0, nil];
+    [self.audioEngine updatePattern:[NSArray arrayWithObjects:track1Pattern, track2Pattern, track3Pattern, nil]];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view, typically from a nib.
-//    self.audioEngine = [[AudioEngine alloc] init];
+    self.audioEngine = [AudioEngine create];
 
 }
 

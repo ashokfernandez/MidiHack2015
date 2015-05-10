@@ -11,5 +11,6 @@
 @interface AudioEngine : NSObject
 
 +(id)create;
+-(void)updatePattern:(NSArray *)pattern;
 
 @end

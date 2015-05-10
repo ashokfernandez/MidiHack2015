@@ -31,7 +31,7 @@
     engine->_audioController = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]];
     
     // Initialise tracks
-    AudioSamplePlayer *track1 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Kick" withExtension:@"caf"]
+    AudioSamplePlayer *track1 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Hat" withExtension:@"caf"]
                                             audioController: engine->_audioController
                                                       error:NULL];
 
@@ -39,7 +39,7 @@
                                                           audioController: engine->_audioController
                                                                     error:NULL];
 
-    AudioSamplePlayer *track3 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Hat" withExtension:@"caf"]
+    AudioSamplePlayer *track3 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Kick" withExtension:@"caf"]
                                                           audioController: engine->_audioController
                                                                     error:NULL];
 
@@ -67,16 +67,17 @@
                                    userInfo:nil
                                     repeats:YES];
     
-    // Hardcode a pattern to play
-    NSArray *kickPattern = [NSArray arrayWithObjects: @1, @0, @0, @0, nil];
-    NSArray *snarePattern = [NSArray arrayWithObjects: @0, @0, @1, @0, nil];
-    NSArray *hatPattern = [NSArray arrayWithObjects: @0, @1, @1, @1, nil];
+    // Hardcode an initial pattern
+    NSArray *track1Pattern = [NSArray arrayWithObjects: @0, @0, @0, @0, @0, @0, @0, @0, nil];
+    NSArray *track2Pattern = [NSArray arrayWithObjects: @0, @0, @0, @0, @0, @0, @0, @0, nil];
+    NSArray *track3Pattern = [NSArray arrayWithObjects: @0, @0, @0, @0, @0, @0, @0, @0, nil];
     
-    engine->_pattern = [NSArray arrayWithObjects: kickPattern, snarePattern, hatPattern, nil];
+    engine->_pattern = [NSArray arrayWithObjects: track1Pattern, track2Pattern, track3Pattern, nil];
     
     return engine;
 
 }
+
 
 -(void)incrementStep {
 
@@ -96,6 +97,10 @@
     if(self.step >= NUM_STEPS) {
         self.step = 0;
     }
+}
+
+-(void)updatePattern:(NSArray *)pattern {
+    self.pattern = pattern;
 }
 
 
