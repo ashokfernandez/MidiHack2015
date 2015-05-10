@@ -172,8 +172,14 @@ static NSMutableArray *buttons;
         [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }
+  
+    NSArray *track1Pattern = [states subarrayWithRange:NSMakeRange(0, 8)];
+    NSArray *track2Pattern = [states subarrayWithRange:NSMakeRange(7, 8)];
+    NSArray *track3Pattern = [states subarrayWithRange:NSMakeRange(15, 8)];
     
-    NSLog(@"state: %@", states);
+    NSArray *result = [NSArray arrayWithObjects: track1Pattern, track2Pattern, track3Pattern, nil];
+    
+    NSLog(@"state: %@", result);
 }
 
 @end
