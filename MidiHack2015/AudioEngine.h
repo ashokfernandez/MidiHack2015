@@ -10,7 +10,7 @@
 
 @interface AudioEngine : NSObject
 
--(BOOL)setup;
--(BOOL)start;
++(id)create;
+-(void)updatePattern:(NSArray *)pattern;
 
 @end

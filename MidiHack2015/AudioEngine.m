@@ -6,60 +6,102 @@
 //  Copyright (c) 2015 Ashok Fernandez. All rights reserved.
 //
 
+@import Foundation;
 #import "AudioEngine.h"
+#import "AudioSamplePlayer.h"
 #import <TheAmazingAudioEngine/TheAmazingAudioEngine.h>
+
+#define NUM_CHANNELS 3
+#define NUM_STEPS 4
 
 @interface AudioEngine ()
 @property (nonatomic) AEAudioController *audioController;
-//@property (nonatomic) NSArray *channels;
-//@property (nonatomic) AEAudioUnitFilter *pulseReverb;
-//@property (nonatomic) AEAudioUnitFilter *boopReverb;
-//@property (nonatomic) BOOL *channelActivity;
+@property (nonatomic) NSArray *channels;
+@property (nonatomic) NSTimer *timer;
+@property (nonatomic) NSUInteger step;
+@property (nonatomic) NSArray *pattern;
 @end
 
 @implementation AudioEngine
 
--(BOOL)setup {
-    self.audioController = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]];
++(id)create {
+    
+    AudioEngine *engine = [[self alloc] init];
+
+    engine->_audioController = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]];
     
     // Initialise tracks
-//    NSError *errorTrack1 = nil;
-    AEAudioFilePlayer *track1 =
-    [AEAudioFilePlayer audioFilePlayerWithURL:
-     [[NSBundle mainBundle] URLForResource:@"synth" withExtension:@"caf"]
-                              audioController: self.audioController
-                                        error:NULL];
-//
-//    NSError *errorTrack2 = nil;
-//    AEAudioFilePlayer *track2 =
-//    [AEAudioFilePlayer audioFilePlayerWithURL:
-//     [[NSBundle mainBundle] URLForResource:@"Track 2" withExtension:@"m4a"]
-//                              audioController: self.audioController
-//                                        error:&errorTrack2];
-//    
-//    NSLog(@"%@", errorTrack1);
-//    NSLog(@"%@", errorTrack2);
-    
-    // Set to loop mode
-//    track1.loop = YES;
-//    track2.loop = YES;
-    
-    // Add channels
-    [self.audioController addChannels:[NSArray arrayWithObjects:track1, nil]];
+    AudioSamplePlayer *track1 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Hat" withExtension:@"caf"]
+                                            audioController: engine->_audioController
+                                                      error:NULL];
 
-    return YES;
-}
+    AudioSamplePlayer *track2 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Snare" withExtension:@"caf"]
+                                                          audioController: engine->_audioController
+                                                                    error:NULL];
 
-- (BOOL)start
-{
+    AudioSamplePlayer *track3 = [AudioSamplePlayer audioFilePlayerWithURL:[[NSBundle mainBundle] URLForResource:@"Kick" withExtension:@"caf"]
+                                                          audioController: engine->_audioController
+                                                                    error:NULL];
+
+    
+    // Save channels to object
+    engine->_channels = [NSArray arrayWithObjects:track1, track2, track3, nil];
+    
+    // Add channels to main audio controller
+    [engine->_audioController addChannels: engine->_channels];
+
+    // Start playback
     NSError *error = nil;
-    if ( ! [self.audioController start:&error])
+    if ( ! [engine->_audioController start:&error])
     {
         NSLog(@"%@", error);
-        return NO;
+        return nil;
     }
     
-    return YES;
+    // Initialise the step value and timer
+    engine->_step = 0;
+    
+    engine->_timer = [NSTimer scheduledTimerWithTimeInterval:0.3
+                                     target:engine
+                                   selector:@selector(incrementStep)
+                                   userInfo:nil
+                                    repeats:YES];
+    
+    // Hardcode an initial pattern
+    NSArray *track1Pattern = [NSArray arrayWithObjects: @0, @0, @0, @0, @0, @0, @0, @0, nil];
+    NSArray *track2Pattern = [NSArray arrayWithObjects: @0, @0, @0, @0, @0, @0, @0, @0, nil];
+    NSArray *track3Pattern = [NSArray arrayWithObjects: @0, @0, @0, @0, @0, @0, @0, @0, nil];
+    
+    engine->_pattern = [NSArray arrayWithObjects: track1Pattern, track2Pattern, track3Pattern, nil];
+    
+    return engine;
+
 }
+
+
+-(void)incrementStep {
+
+    AudioSamplePlayer *channel;
+    NSArray *pattern;
+
+    for (int i=0; i<NUM_CHANNELS; i++) {
+        channel = self.channels[i];
+        pattern = self.pattern[i];
+        
+        if ([pattern[self.step] isEqualToNumber: @1]) {
+            [channel play];
+        }
+    }
+
+    self.step += 1;
+    if(self.step >= NUM_STEPS) {
+        self.step = 0;
+    }
+}
+
+-(void)updatePattern:(NSArray *)pattern {
+    self.pattern = pattern;
+}
+
 
 @end
