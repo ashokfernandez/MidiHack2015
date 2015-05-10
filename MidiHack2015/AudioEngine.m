@@ -12,7 +12,7 @@
 #import <TheAmazingAudioEngine/TheAmazingAudioEngine.h>
 
 #define NUM_CHANNELS 3
-#define NUM_STEPS 4
+#define NUM_STEPS 8
 
 @interface AudioEngine ()
 @property (nonatomic) AEAudioController *audioController;

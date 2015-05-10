@@ -179,7 +179,7 @@ static NSMutableArray *buttons;
     
     NSArray *result = [NSArray arrayWithObjects: track1Pattern, track2Pattern, track3Pattern, nil];
     [self.audioEngine updatePattern:result];
-//    NSLog(@"state: %@", result);
+    NSLog(@"state: %@", result);
 }
 
 @end
