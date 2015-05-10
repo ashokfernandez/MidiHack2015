@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property AudioEngine *audioEngine;
+
 @end
 
 @implementation ViewController
@@ -21,6 +23,7 @@ static NSMutableArray *buttons;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.audioEngine = [AudioEngine create];
     
     states = [[NSMutableArray alloc] init];
     buttons = [[NSMutableArray alloc] init];
