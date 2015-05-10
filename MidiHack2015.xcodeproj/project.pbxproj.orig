@@ -251,12 +251,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				B044029C1AFEC4FD00E6F918 /* Hat.caf in Resources */,
 				B044029D1AFEC4FD00E6F918 /* Kick.caf in Resources */,
 				B044029E1AFEC4FD00E6F918 /* Snare.caf in Resources */,
 				B04402851AFE412400E6F918 /* Main.storyboard in Resources */,
+=======
 				BAB698351AFEC24D0082E207 /* ellipses.png in Resources */,
 				B08028A61AF8FBCB0066041C /* Main.storyboard in Resources */,
+>>>>>>> origin/master
 				B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */,
 				B08028A81AF8FBCB0066041C /* Images.xcassets in Resources */,
 				BAB698361AFEC24D0082E207 /* play.png in Resources */,

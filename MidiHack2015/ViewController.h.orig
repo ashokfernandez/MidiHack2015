@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+<<<<<<< HEAD
+-(IBAction)showMessage:(id)sender;
+=======
 @property (weak, nonatomic) IBOutlet UIButton *button1;
 @property (weak, nonatomic) IBOutlet UIButton *button2;
 @property (weak, nonatomic) IBOutlet UIButton *button3;
@@ -34,6 +37,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *button22;
 @property (weak, nonatomic) IBOutlet UIButton *button23;
 @property (weak, nonatomic) IBOutlet UIButton *button24;
+>>>>>>> origin/master
 
 @end
 
