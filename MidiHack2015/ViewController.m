@@ -172,10 +172,10 @@ static NSMutableArray *buttons;
         [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }
-  
+    
     NSArray *track1Pattern = [states subarrayWithRange:NSMakeRange(0, 8)];
-    NSArray *track2Pattern = [states subarrayWithRange:NSMakeRange(7, 8)];
-    NSArray *track3Pattern = [states subarrayWithRange:NSMakeRange(15, 8)];
+    NSArray *track2Pattern = [states subarrayWithRange:NSMakeRange(8, 8)];
+    NSArray *track3Pattern = [states subarrayWithRange:NSMakeRange(16, 8)];
     
     NSArray *result = [NSArray arrayWithObjects: track1Pattern, track2Pattern, track3Pattern, nil];
     [self.audioEngine updatePattern:result];
