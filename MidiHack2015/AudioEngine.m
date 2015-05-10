@@ -61,7 +61,7 @@
     // Initialise the step value and timer
     engine->_step = 0;
     
-    engine->_timer = [NSTimer scheduledTimerWithTimeInterval:0.3
+    engine->_timer = [NSTimer scheduledTimerWithTimeInterval:0.23
                                      target:engine
                                    selector:@selector(incrementStep)
                                    userInfo:nil
