@@ -20,6 +20,9 @@
 		B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08028A91AF8FBCB0066041C /* LaunchScreen.xib */; };
 		B08028B71AF8FBCB0066041C /* MidiHack2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B08028B61AF8FBCB0066041C /* MidiHack2015Tests.m */; };
 		B878245BF8CE6B553EBC55C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C3D4ABFB4416BFD0FCBD8 /* libPods.a */; };
+		BAA6B5F11AFF4791005C87D5 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA6B5EE1AFF4791005C87D5 /* green.png */; };
+		BAA6B5F21AFF4791005C87D5 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA6B5EF1AFF4791005C87D5 /* red.png */; };
+		BAA6B5F31AFF4791005C87D5 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA6B5F01AFF4791005C87D5 /* blue.png */; };
 		BAB698351AFEC24D0082E207 /* ellipses.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB698331AFEC24D0082E207 /* ellipses.png */; };
 		BAB698361AFEC24D0082E207 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB698341AFEC24D0082E207 /* play.png */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,9 @@
 		B08028B51AF8FBCB0066041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08028B61AF8FBCB0066041C /* MidiHack2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiHack2015Tests.m; sourceTree = "<group>"; };
 		B73C3D4ABFB4416BFD0FCBD8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA6B5EE1AFF4791005C87D5 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		BAA6B5EF1AFF4791005C87D5 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		BAA6B5F01AFF4791005C87D5 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		BAB698331AFEC24D0082E207 /* ellipses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ellipses.png; sourceTree = "<group>"; };
 		BAB698341AFEC24D0082E207 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		E5A388B8840EF4E7CDD983B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,14 +129,17 @@
 			children = (
 				BAB698331AFEC24D0082E207 /* ellipses.png */,
 				BAB698341AFEC24D0082E207 /* play.png */,
+				BAA6B5EE1AFF4791005C87D5 /* green.png */,
+				BAA6B5EF1AFF4791005C87D5 /* red.png */,
+				BAA6B5F01AFF4791005C87D5 /* blue.png */,
 				B080289E1AF8FBCB0066041C /* AppDelegate.h */,
 				B080289F1AF8FBCB0066041C /* AppDelegate.m */,
 				B08028A11AF8FBCB0066041C /* ViewController.h */,
+				B08028A21AF8FBCB0066041C /* ViewController.m */,
 				B044028A1AFE4ABD00E6F918 /* AudioEngine.h */,
 				B044028B1AFE4ABD00E6F918 /* AudioEngine.m */,
 				B04402931AFE8FBF00E6F918 /* AudioSamplePlayer.h */,
 				B04402941AFE8FBF00E6F918 /* AudioSamplePlayer.m */,
-				B08028A21AF8FBCB0066041C /* ViewController.m */,
 				B04402991AFEC4DC00E6F918 /* Hat.caf */,
 				B044029A1AFEC4DC00E6F918 /* Kick.caf */,
 				B044029B1AFEC4DC00E6F918 /* Snare.caf */,
@@ -254,9 +263,11 @@
 				B044029C1AFEC4FD00E6F918 /* Hat.caf in Resources */,
 				B044029D1AFEC4FD00E6F918 /* Kick.caf in Resources */,
 				B044029E1AFEC4FD00E6F918 /* Snare.caf in Resources */,
+				BAA6B5F21AFF4791005C87D5 /* red.png in Resources */,
+				BAA6B5F11AFF4791005C87D5 /* green.png in Resources */,
 				B04402851AFE412400E6F918 /* Main.storyboard in Resources */,
 				BAB698351AFEC24D0082E207 /* ellipses.png in Resources */,
-				B08028A61AF8FBCB0066041C /* Main.storyboard in Resources */,
+				BAA6B5F31AFF4791005C87D5 /* blue.png in Resources */,
 				B08028AB1AF8FBCB0066041C /* LaunchScreen.xib in Resources */,
 				B08028A81AF8FBCB0066041C /* Images.xcassets in Resources */,
 				BAB698361AFEC24D0082E207 /* play.png in Resources */,

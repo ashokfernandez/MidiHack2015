@@ -88,7 +88,7 @@ static NSMutableArray *buttons;
     [buttons addObject:self.button23];
     [buttons addObject:self.button24];
     
-    UIImage *buttonImage = [UIImage imageNamed:@"play.png"];
+    UIImage *buttonImage = [UIImage imageNamed:@"blue.png"];
     
     // ROW 1
     [buttons[0] setBackgroundImage:buttonImage forState:UIControlStateNormal];
@@ -164,11 +164,11 @@ static NSMutableArray *buttons;
     NSLog(@"change: index: %d state: %@", buttonIndex, buttonState);
     
     if ([buttonState isEqualToNumber: @1]) {
-        UIImage *buttonImage = [UIImage imageNamed:@"play.png"];
+        UIImage *buttonImage = [UIImage imageNamed:@"blue.png"];
         [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@0];
     } else {
-        UIImage *buttonImage = [UIImage imageNamed:@"ellipses.png"];
+        UIImage *buttonImage = [UIImage imageNamed:@"green.png"];
         [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }

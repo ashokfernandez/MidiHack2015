@@ -19,7 +19,7 @@
                     <size key="shadowOffset" width="1" height="1"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="0.66274509803921566" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="kId-c2-rCX" secondAttribute="centerY" constant="0.5" id="dLV-q3-pFv"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" constant="-0.5" id="zWM-t0-bkV"/>
