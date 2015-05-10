@@ -168,8 +168,17 @@ static NSMutableArray *buttons;
         [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [states replaceObjectAtIndex:buttonIndex withObject:@0];
     } else {
-        UIImage *buttonImage = [UIImage imageNamed:@"green.png"];
-        [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+        if (buttonIndex > 15) {
+            UIImage *buttonImage = [UIImage imageNamed:@"green.png"];
+            [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+        } else if (buttonIndex > 7) {
+            UIImage *buttonImage = [UIImage imageNamed:@"blue.png"];
+            [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+        } else {
+            UIImage *buttonImage = [UIImage imageNamed:@"red.png"];
+            [buttons[buttonIndex] setBackgroundImage:buttonImage forState:UIControlStateNormal];
+        }
+        
         [states replaceObjectAtIndex:buttonIndex withObject:@1];
     }
     
