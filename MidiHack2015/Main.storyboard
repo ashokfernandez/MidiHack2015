@@ -17,7 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNy-fq-99e">
-                                <rect key="frame" x="173" y="152" width="64" height="64"/>
+                                <rect key="frame" x="171" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,7 +29,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUw-FX-Tz2">
-                                <rect key="frame" x="429" y="152" width="64" height="64"/>
+                                <rect key="frame" x="427" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,7 +41,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjF-zf-ye0">
-                                <rect key="frame" x="492" y="152" width="64" height="64"/>
+                                <rect key="frame" x="490" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +53,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-iw-fK2">
-                                <rect key="frame" x="44" y="152" width="64" height="64"/>
+                                <rect key="frame" x="44" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,7 +65,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjm-7c-AkH">
-                                <rect key="frame" x="301" y="153" width="64" height="64"/>
+                                <rect key="frame" x="299" y="87" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,7 +77,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-ef-nEf">
-                                <rect key="frame" x="109" y="152" width="64" height="64"/>
+                                <rect key="frame" x="107" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,7 +89,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iw1-fZ-nrI">
-                                <rect key="frame" x="365" y="152" width="64" height="64"/>
+                                <rect key="frame" x="363" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +101,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-Kx-vYN">
-                                <rect key="frame" x="237" y="152" width="64" height="64"/>
+                                <rect key="frame" x="235" y="88" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,7 +113,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXt-Ay-Uce">
-                                <rect key="frame" x="171" y="224" width="64" height="64"/>
+                                <rect key="frame" x="171" y="160" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="10">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,7 +125,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-p1-ad7">
-                                <rect key="frame" x="429" y="223" width="64" height="64"/>
+                                <rect key="frame" x="429" y="159" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="14">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,7 +137,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhZ-mM-Fmn">
-                                <rect key="frame" x="492" y="224" width="64" height="64"/>
+                                <rect key="frame" x="492" y="160" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="15">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,7 +149,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdQ-fX-JKn">
-                                <rect key="frame" x="44" y="224" width="64" height="64"/>
+                                <rect key="frame" x="44" y="160" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,7 +161,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoj-IH-Uaq">
-                                <rect key="frame" x="301" y="225" width="64" height="64"/>
+                                <rect key="frame" x="301" y="161" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="12">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,7 +173,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6V-tz-n3B">
-                                <rect key="frame" x="107" y="224" width="64" height="64"/>
+                                <rect key="frame" x="107" y="160" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,7 +185,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKv-JN-jCS">
-                                <rect key="frame" x="365" y="224" width="64" height="64"/>
+                                <rect key="frame" x="365" y="160" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="13">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,7 +197,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soK-El-ZmK">
-                                <rect key="frame" x="237" y="224" width="64" height="64"/>
+                                <rect key="frame" x="237" y="160" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="11">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,7 +209,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b8-Zu-bFI">
-                                <rect key="frame" x="173" y="295" width="64" height="64"/>
+                                <rect key="frame" x="173" y="231" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="18">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,7 +221,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEe-4y-GSu">
-                                <rect key="frame" x="429" y="295" width="64" height="64"/>
+                                <rect key="frame" x="429" y="231" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="22">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,7 +233,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnk-17-12z">
-                                <rect key="frame" x="44" y="296" width="64" height="64"/>
+                                <rect key="frame" x="44" y="232" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="16">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,7 +245,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm3-RF-EqB">
-                                <rect key="frame" x="301" y="294" width="64" height="64"/>
+                                <rect key="frame" x="301" y="230" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="20">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,7 +257,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgY-5A-fp3">
-                                <rect key="frame" x="109" y="295" width="64" height="64"/>
+                                <rect key="frame" x="109" y="231" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="17">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -248,7 +269,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzR-ve-ah7">
-                                <rect key="frame" x="365" y="296" width="64" height="64"/>
+                                <rect key="frame" x="365" y="232" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="21">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -259,7 +281,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrS-hp-Wtq">
-                                <rect key="frame" x="237" y="296" width="64" height="64"/>
+                                <rect key="frame" x="237" y="232" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="19">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,7 +293,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t71-Aa-dhi">
-                                <rect key="frame" x="492" y="296" width="64" height="64"/>
+                                <rect key="frame" x="492" y="232" width="64" height="64"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="23">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -280,6 +304,14 @@
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGT-wi-pY6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hard and fast with a responsible amount of party" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRG-wU-Pc9">
+                                <rect key="frame" x="16" y="20" width="568" height="74"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.66274509803921566" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
